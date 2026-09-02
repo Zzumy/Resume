@@ -1,18 +1,25 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="script/protection.js" defer></script>
     <script src="script/toggleMode.js" type="module"></script>
     <script src="script/toggleMenu.js" defer></script>
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mediaqueries.css" />
     <link rel="icon" href="css/assets/arasaka.png" sizes="30x30" />
+
     <title>Nguyen Duc Duy | Portfolio</title>
   </head>
-  <body>
+
+  <body id="top">
+    <!-- ==================== NAVIGATION ==================== -->
+
     <nav id="desktop-nav">
       <div
         class="logo theme-toggle"
@@ -22,6 +29,7 @@
       >
         <img class="theme-icon" src="./css/assets/sun.png" alt="Light mode" />
       </div>
+
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -31,6 +39,7 @@
         </ul>
       </div>
     </nav>
+
     <nav id="hamburger-nav">
       <div
         class="logo theme-toggle"
@@ -40,44 +49,60 @@
       >
         <img class="theme-icon" src="./css/assets/sun.png" alt="Light mode" />
       </div>
+
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
+
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="#about" onclick="toggleMenu()">About</a>
+          </li>
+
           <li>
             <a href="#experience" onclick="toggleMenu()">Experience</a>
           </li>
+
           <li>
             <a href="#projects" onclick="toggleMenu()">Projects</a>
           </li>
+
           <li>
             <a href="#contact" onclick="toggleMenu()">Contact</a>
           </li>
         </div>
       </div>
     </nav>
+
+    <!-- ==================== PROFILE ==================== -->
+
     <section id="profile">
       <div class="section__pic-container">
         <img src="./css/assets/port.png" alt="Nguyen Duc Duy profile picture" />
       </div>
+
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
+
         <h1 class="title">Nguyen Duc Duy</h1>
+
         <p class="section__text__p2">
-          3D Animator / Motion Graphics Artist<br />&<br />Software Developer /
-          Tester
+          3D Animator / Motion Graphics Artist<br />
+          &<br />
+          Software Developer / Tester
         </p>
+
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./css/assets/projects.pdf')"
+            onclick="window.open('./css/assets/projects.pdf', '_blank')"
           >
             Projects PDF
           </button>
+
           <button
             class="btn btn-color-2"
             onclick="
@@ -89,33 +114,44 @@
             Contact Info
           </button>
         </div>
+
         <div id="socials-container">
+          <!-- Email -->
           <img
             src="./css/assets/email.png"
-            alt="My email adress"
+            alt="My email address"
             class="icon"
             onclick="window.open('mailto:zumyy@protonmail.com', '_blank')"
           />
+
+          <!-- YouTube -->
           <img
             src="./css/assets/utube.png"
-            alt="My Github profile"
+            alt="My YouTube profile"
             class="icon"
             onclick="
-              window.open('https:/www.youtube.com/@ZumyAnimations', '_blank')
+              window.open('https://www.youtube.com/@ZumyAnimations', '_blank')
             "
           />
+
+          <!-- GitHub -->
           <img
             src="./css/assets/github.png"
-            alt="My Github profile"
+            alt="My GitHub profile"
             class="icon"
-            onclick="window.open('https:/github.com/Zzumy', '_blank')"
+            onclick="window.open('https://github.com/Zzumy', '_blank')"
           />
         </div>
       </div>
     </section>
+
+    <!-- ==================== ABOUT ==================== -->
+
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
+
       <h1 class="title">About Me</h1>
+
       <div class="section-container">
         <div class="section__pic-container">
           <img
@@ -124,42 +160,62 @@
             class="about-pic"
           />
         </div>
+
         <div class="about-details-container">
           <div class="about-containers">
+            <!-- Experience -->
             <div class="details-container">
               <img
                 src="./css/assets/experience.png"
                 alt="Experience icon"
                 class="plane-icon"
               />
+
               <h3>Experience</h3>
+
               <p>
                 Junior Software Developer | Wildom Kft.
-                <br />September 2023 - April 2024 <br /><br />◦ Collaborated
-                with team members on development projects<br /><br />◦
-                Contributed to improving existing features and workflows
-                <br /><br />◦ Identified and resolved website issues
+                <br />
+                September 2023 - April 2024
+                <br /><br />
+
+                ◦ Collaborated with team members on development projects
+                <br /><br />
+
+                ◦ Contributed to improving existing features and workflows
+                <br /><br />
+
+                ◦ Identified and resolved website issues
               </p>
             </div>
+
+            <!-- Education -->
             <div class="details-container">
               <img
                 src="./css/assets/education.png"
                 alt="Education icon"
                 class="plane-icon"
               />
+
               <h3>Education</h3>
+
               <p>
                 Motion Picture Creation and Animation Degree | 2026 |
                 SZÁMALK-Szalézi Technikum
+
                 <br /><br />
+
                 Software Development & Software Testing Degree | 2023 |
                 SZÁMALK-Szalézi Technikum
+
                 <br /><br />
+
                 Intermediate Level B2 English Language Certificate | 2021 |
                 Shetland U.K. Language School
               </p>
             </div>
           </div>
+
           <div class="text-container">
             <p>
               I am 23 years old, and I have programming and 3D animation
@@ -169,32 +225,36 @@
               game modding, and for this purpose, I had to learn the modding
               tools and the technical structure of each game in order to be able
               to modify its files. This helped me develop the ability to adapt
-              to unknown systems and learn new tools independently.<br /><br />Learning
-              programming gave me confidence in my ability to learn new software
-              programs, understand unfamiliar technical systems, and resolve
-              various technical problems. At the same time, 3D animation gives
-              me the opportunity to focus on storytelling and creating visuals.
-              The first 3D animation short film I made received over 10,000
-              views on YouTube, and it motivated me to continue pursuing
+              to unknown systems and learn new tools independently.
+
+              <br /><br />
+
+              Learning programming gave me confidence in my ability to learn new
+              software programs, understand unfamiliar technical systems, and
+              resolve various technical problems. At the same time, 3D animation
+              gives me the opportunity to focus on storytelling and creating
+              visuals. The first 3D animation short film I made received over
+              10,000 views on YouTube, and it motivated me to continue pursuing
               animation and further develop my skills as a 3D animator.
             </p>
           </div>
         </div>
       </div>
-      <!-- <img
-        src="./css/assets/arrow.png"
-        alt="Arrow icon"
-        class="arrow-icon"
-        onclick="location.href = './#experience'"
-      /> -->
     </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
+
       <h1 class="title">Experience</h1>
+
       <div class="d">
         <div class="experience-containers">
+          <!-- 3D & Animation -->
           <div class="details-container">
             <h2 class="experience-sub-title">3D & Animation</h2>
+
             <div class="article-container">
               <article>
                 <img
@@ -206,6 +266,7 @@
                   <h3>Blender</h3>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./css/assets/checkmark.png"
@@ -216,6 +277,7 @@
                   <h3>Cinema 4D</h3>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./css/assets/checkmark.png"
@@ -226,6 +288,7 @@
                   <h3>Moho Pro 14.4</h3>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./css/assets/checkmark.png"
@@ -236,6 +299,7 @@
                   <h3>Procreate Dreams</h3>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./css/assets/checkmark.png"
@@ -248,8 +312,11 @@
               </article>
             </div>
           </div>
+
+          <!-- Video Editing & Graphic Design -->
           <div class="details-container">
             <h2 class="experience-sub-title">Video Editing & Graphic Design</h2>
+
             <div class="article-container">
               <article>
                 <img
@@ -261,6 +328,7 @@
                   <h3>Adobe Premiere Pro</h3>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./css/assets/checkmark.png"
@@ -271,6 +339,7 @@
                   <h3>Adobe After Effects</h3>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./css/assets/checkmark.png"
@@ -281,6 +350,7 @@
                   <h3>Adobe Photoshop</h3>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./css/assets/checkmark.png"
@@ -291,6 +361,7 @@
                   <h3>Adobe InDesign</h3>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./css/assets/checkmark.png"
@@ -303,8 +374,11 @@
               </article>
             </div>
           </div>
+
+          <!-- Frontend Development -->
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
+
             <div class="article-container">
               <article>
                 <img
@@ -316,6 +390,7 @@
                   <h3>HTML</h3>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./css/assets/checkmark.png"
@@ -326,6 +401,7 @@
                   <h3>CSS</h3>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./css/assets/checkmark.png"
@@ -338,8 +414,11 @@
               </article>
             </div>
           </div>
+
+          <!-- Backend Development -->
           <div class="details-container">
             <h2 class="experience-sub-title">Backend Development</h2>
+
             <div class="article-container">
               <article>
                 <img
@@ -351,6 +430,7 @@
                   <h3>Java</h3>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./css/assets/checkmark.png"
@@ -361,6 +441,7 @@
                   <h3>Python</h3>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./css/assets/checkmark.png"
@@ -371,6 +452,7 @@
                   <h3>SQL</h3>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./css/assets/checkmark.png"
@@ -385,18 +467,18 @@
           </div>
         </div>
       </div>
-      <!-- <img
-        src="./css/assets/arrow.png"
-        alt="Arrow icon"
-        class="arrow-icon"
-        onclick="location.href = './#projects'"
-      /> -->
     </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
+
       <h1 class="title">Projects</h1>
+
       <div class="project-details-container">
         <div class="project-containers">
+          <!-- Project 1: Helldivers 2 -->
           <div class="details-container color-container">
             <div class="article-container">
               <iframe
@@ -414,21 +496,30 @@
                 allowfullscreen
               ></iframe>
             </div>
+
             <h2 class="experience-sub-title project-title">
               Helldivers 2 Fanmade 3D Animation
             </h2>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.youtube.com/@ZumyAnimations')"
+                onclick="
+                  window.open(
+                    'https://www.youtube.com/@ZumyAnimations',
+                    '_blank',
+                  )
+                "
               >
-                Chanel
+                Channel
               </button>
+
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="
                   window.open(
                     'https://www.youtube.com/watch?v=0e8dPYCaCMY&t=89s',
+                    '_blank',
                   )
                 "
               >
@@ -436,109 +527,148 @@
               </button>
             </div>
           </div>
+
+          <!-- Project 2: God of War -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./css/assets/gow.png.jpg"
-                alt="Project 2"
+                alt="God of War project"
                 class="project-img"
               />
             </div>
+
             <h2 class="experience-sub-title project-title">
               Experimental Fanmade God of War Website
             </h2>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="
-                  window.open('https://github.com/Zzumy/GodOfWarComic.git')
+                  window.open(
+                    'https://github.com/Zzumy/GodOfWarComic.git',
+                    '_blank',
+                  )
                 "
               >
-                Github
+                GitHub
               </button>
+
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="window.open('https://zzumy.github.io/GodOfWarComic/')"
+                onclick="
+                  window.open(
+                    'https://zzumy.github.io/GodOfWarComic/',
+                    '_blank',
+                  )
+                "
               >
                 Live Demo
               </button>
             </div>
           </div>
+
+          <!-- Project 3: Underneth86 -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./css/assets/under.png"
-                alt="Project 3"
+                alt="Underneth86 project"
                 class="project-img"
               />
             </div>
+
             <h2 class="experience-sub-title project-title">
               Experimental Custommade Website
             </h2>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="
-                  window.open('https://github.com/Zzumy/Underneth86.git')
+                  window.open(
+                    'https://github.com/Zzumy/Underneth86.git',
+                    '_blank',
+                  )
                 "
               >
-                Github
+                GitHub
               </button>
+
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="window.open('https://zzumy.github.io/Underneth86/')"
+                onclick="
+                  window.open('https://zzumy.github.io/Underneth86/', '_blank')
+                "
               >
                 Live Demo
               </button>
             </div>
           </div>
+
+          <!-- Project 4: Among Us -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./css/assets/sus.png"
-                alt="Project 1"
+                alt="Among Us project"
                 class="project-img"
               />
             </div>
+
             <h2 class="experience-sub-title project-title">
               Experimental Fanmade Among Us Website
             </h2>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Zzumy/Sus.git')"
+                onclick="
+                  window.open('https://github.com/Zzumy/Sus.git', '_blank')
+                "
               >
-                Github
+                GitHub
               </button>
+
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="window.open('https://zzumy.github.io/Sus/')"
+                onclick="window.open('https://zzumy.github.io/Sus/', '_blank')"
               >
                 Live Demo
               </button>
             </div>
           </div>
+
+          <!-- Project 5: Cyberpunk 2077 -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./css/assets/metro.png"
-                alt="Project 1"
+                alt="Cyberpunk 2077 project"
                 class="project-img"
               />
             </div>
+
             <h2 class="experience-sub-title project-title">
               Experimental Fanmade Cyberpunk 2077 Website
             </h2>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Zzumy/ncart')"
+                onclick="
+                  window.open('https://github.com/Zzumy/ncart', '_blank')
+                "
               >
-                Github
+                GitHub
               </button>
+
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="window.open('https://zzumy.github.io/ncart/')"
+                onclick="
+                  window.open('https://zzumy.github.io/ncart/', '_blank')
+                "
               >
                 Live Demo
               </button>
@@ -546,16 +676,15 @@
           </div>
         </div>
       </div>
-      <!-- <img
-        src="./css/assets/arrow.png"
-        alt="Arrow icon"
-        class="arrow-icon"
-        onclick="location.href = './#contact'"
-      /> -->
     </section>
+
+    <!-- ==================== CONTACT ==================== -->
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
+
       <h1 class="title">Contact Me</h1>
+
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -563,38 +692,39 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
+
           <p>
-            <a href="mailto:zumyy@protonmail.com">zumyy@protonmail.com</a>
+            <a href="mailto:zumyy@protonmail.com"> zumyy@protonmail.com </a>
           </p>
         </div>
-        <!--
-                <div class="contact-info-container">
-                    <img
-                        src="./css/assets/discord.png"
-                        alt="LinkedIn icon"
-                        class="icon contact-icon"
-                    />
-                    <p>
-                        <a
-                            href="https://discordapp.com/users/379223565838581770"
-                            >Discord</a
-                        >
-                    </p>
-                </div>
-                -->
       </div>
     </section>
+
+    <!-- ==================== FOOTER ==================== -->
+
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#desktop-nav">Start</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li>
+              <a href="#top">Start</a>
+            </li>
+
+            <li>
+              <a href="#about">About</a>
+            </li>
+
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
           </ul>
         </div>
       </nav>
+
       <p>THIS WEBSITE WAS NOT CREATED BY AI</p>
       <p>Copyright © 2026 Nguyen Duc Duy. All Rights Reserved.</p>
     </footer>
